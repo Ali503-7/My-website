@@ -1,0 +1,151 @@
+@import "../../../assets/Scss/Color/Colors.scss";
+
+.experience {
+  flex-direction: column;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .selector {
+      display: flex;
+      gap: 3em;
+
+      .box {
+        color: $white;
+        font-family: $Email;
+        border: solid 1px $green;
+        padding: 0px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+          box-shadow: inset #64ffda 0px 0 7px 0px, #64ffda 0px 0px 10px 1px;
+        }
+      }
+    }
+
+    .workSection {
+      height: 450px;
+      max-width: 1000px;
+      margin: 18px 0px;
+      border-top: solid 1px $green;
+      border-bottom: solid 1px $green;
+      border-left: solid 1px $green;
+      border-radius: 10px;
+
+      .Project {
+        width: calc(80% / 2);
+        height: fit-content;
+        margin: 1em 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .img {
+          position: relative;
+          width: 100%;
+          height: 250px;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+
+          .code {
+            transform: translateX(100%);
+            bottom: 0px;
+            align-items: flex-start;
+
+            a:focus & {
+              transform: translateX(0%);
+            }
+          }
+
+          .live {
+            transform: translateX(-100%);
+            top: 0px;
+            align-items: flex-end;
+
+            &:focus & {
+              transform: translateX(0%);
+            }
+          }
+          .code,
+          .live {
+            position: absolute;
+            transition: 1s;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 50%;
+            background-color: $dark-slate;
+
+            a {
+              cursor: pointer;
+              margin: 10px;
+              font-size: 1.5em;
+              font-family: $Email;
+              background-color: $blue;
+              border: none;
+              border-radius: 5px;
+              padding: 0 5px;
+              color: $white;
+
+              &:focus {
+                outline: none;
+              }
+
+            }
+          }
+
+          &:hover {
+            .code {
+              transform: translateX(0%);
+            }
+
+            .live {
+              transform: translateX(0%);
+            }
+          }
+        }
+
+        .name {
+          color: $lightest-slate;
+          font-size: 1.5em;
+          font-family: $Email;
+
+          a {
+            color: unset;
+          }
+        }
+      }
+    }
+  }
+  .open-tag,
+  .close-tag {
+    margin: 0em !important;
+    align-self: flex-start;
+    position: relative;
+    left: -80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Project {
+    width: 90% !important;
+  }
+  .open-tag,.close-tag {
+    display: none;
+  }
+  .workSection  {
+    height: 550px !important;
+  }
+}

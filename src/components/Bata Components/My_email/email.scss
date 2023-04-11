@@ -1,0 +1,74 @@
+@import "../../../assets/Scss/Color/Colors.scss";
+
+.Email {
+  z-index: 10;
+  position: fixed;
+  right: -0px;
+  bottom: 0px;
+  flex-direction: column;
+  padding: 0px;
+  width: 11em;
+
+  .line {
+    width: 1px;
+    height: 5em;
+    background-color: $light-slate;
+  }
+
+  .email {
+    transition: 0.5s;
+    transform: rotate(90deg);
+    margin-bottom: 10em;
+
+    a {
+      width: calc(100% + 50px);
+      display: block;
+      transition: 0.5s;
+      color: $lightest-slate;
+      font-style: italic;
+      font-family: $WIM;
+      font-weight: 100;
+      letter-spacing: 5px;
+      font-size: larger;
+      animation: upAndDownE 2s infinite alternate-reverse ease-in-out;
+    }
+
+    &:hover {
+      transform: rotate(90deg) translateX(-10px);
+
+      & a {
+        color: #5dccff !important;
+      }
+    }
+  }
+}
+
+@keyframes upAndDownE {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+
+@media (max-width: 500px) {
+  .Email {
+    transform: rotate(270deg);
+    a {
+      font-size: smaller !important;
+    }
+    .line {
+      height: 3em;
+    }
+    .email {
+      margin-bottom: 7em;
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .Email {
+    display: none;
+  }
+}

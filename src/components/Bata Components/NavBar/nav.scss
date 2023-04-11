@@ -1,0 +1,60 @@
+@import "../../../assets/Scss/Color/Colors.scss";
+
+.nav {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  .bar {
+    z-index: 1000;
+    height: 10vh;
+    background-color: $navy-shadow;
+    transform: translateX(0px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    font-family: $Header;
+
+    a {
+      color: white;
+      background-color: unset;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    &:nth-child(odd) {
+      transform: translateX(-100%);
+    }
+
+    &:nth-child(even) {
+      transform: translateX(100%);
+    }
+  }
+
+  &.show {
+    z-index: 1000;
+    .bar:nth-child(odd) {
+      transform: translateX(0%);
+    }
+
+    .bar:nth-child(even) {
+      transform: translateX(0%);
+    }
+  }
+
+  @for $i from 0 through 10 {
+    .bar:nth-child(#{$i}) {
+      transition: var(--delay-#{$i - 1});
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .nav {
+    display: none !important;
+  }
+}

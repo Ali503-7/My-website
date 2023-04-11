@@ -1,0 +1,64 @@
+@import "../../../assets/Scss/Color/Colors.scss";
+
+.contact {
+  flex-direction: column;
+  gap: 5em;
+  margin: auto auto;
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    .contact-msg {
+      color: $lightest-slate;
+      font-family: $My-Name;
+      max-width: 1000px;
+      font-size: 2em;
+      text-align: center;
+    }
+  }
+  .open-tag,
+  .close-tag {
+    align-self: flex-start;
+    left: -50px;
+    position: relative;
+  }
+  .social-links {
+    align-items: center;
+    padding: 0px;
+    width: 11em;
+    gap: 3.5em;
+    .social-links {
+      display: flex;
+      flex-direction: row;
+      gap: 3em;
+      a {
+        width: 30px;
+        height: 30px;
+        svg,
+        img {
+          transition: 0.9s;
+          width: 100%;
+          height: 100%;
+          color: $lightest-slate;
+          cursor: pointer;
+          &:hover {
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .contact {
+    font-size: 0.7em;
+  }
+}
+@media (min-width: 1151px) {
+  .social-links {
+    display: none;
+  }
+}

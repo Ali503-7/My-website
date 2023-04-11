@@ -1,0 +1,102 @@
+@import "../../../assets/Scss/Color/Colors.scss";
+@import "../../../assets/Scss/global/global.scss";
+
+.header {
+  .container {
+    justify-content: space-between;
+  }
+
+  .logo {
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+
+  .right {
+    .burger {
+      height: 20px;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      z-index: 1000;
+      position: sticky;
+
+      span {
+        transition: 1s;
+        width: 40px;
+        height: 2px;
+        background-color: $blue;
+        border-radius: 5px;
+
+        &:nth-child(1) {
+          width: 5px;
+        }
+
+        &:nth-child(2) {
+          width: 25px;
+        }
+      }
+    }
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+
+    .link {
+      font-family: $Header;
+
+      ol {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+
+        a {
+          transition: 0.5s;
+          text-decoration: none;
+          color: $white;
+          font-size: $F-s;
+
+          &:hover {
+            color: $green;
+          }
+
+          .navNumber {
+            color: $green;
+            margin-right: 0.1em;
+          }
+        }
+      }
+    }
+  }
+}
+
+.active {
+  color: $green;
+}
+
+.burger-clicked {
+  & span:nth-child(1) {
+    width: 40px !important;
+  }
+
+  & span:nth-child(3) {
+    width: 5px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .burger {
+    display: flex !important;
+  }
+
+  .links {
+    display: none !important;
+  }
+}

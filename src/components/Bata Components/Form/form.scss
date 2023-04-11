@@ -1,0 +1,99 @@
+@import "../../../assets/Scss/Color/Colors.scss";
+
+.form {
+  transition: 0.5s;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 100;
+  background-color: $lightest-navy;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%);
+
+  .exit {
+    transition: 0.5s;
+    position: absolute;
+    font-size: 3em;
+    color: $white;
+    font-family: $Header;
+    top: 30px;
+    right: 80px;
+    cursor: pointer;
+    &:hover {
+      color: $green;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      color: $green;
+      font-family: $Header;
+    }
+    input {
+      outline: none;
+      border: solid 1px $green;
+      background-color: transparent;
+      color: $white;
+      border-radius: 5px;
+      height: 50px;
+      width: 700px;
+      margin-bottom: 1em;
+      font-size: 1.5em;
+      padding: 0px 5px;
+    }
+    textarea {
+      padding: 0px 5px;
+      height: 150px;
+      font-size: 1.5em;
+      resize: none;
+      outline: none;
+      border-radius: 5px;
+      border: solid 1px $green;
+      background-color: transparent;
+      color: $white;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.show {
+  transform: translateY(0%);
+}
+.hidden {
+  transform: translateY(100%);
+}
+
+@media (max-width: 750px) {
+  .form {
+    input {
+      width: 500px !important;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .form {
+    z-index: 10000;
+    .exit {
+      top: 10px;
+      right: 20px;
+    }
+  }
+}
+@media (max-width: 430px) {
+  .form {
+    z-index: 10000;
+    input,
+    textarea {
+      width: 250px !important;
+    }
+    .exit {
+      top: 10px;
+      right: 20px;
+    }
+  }
+}

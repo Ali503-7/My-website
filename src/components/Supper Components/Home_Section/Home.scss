@@ -1,0 +1,52 @@
+
+@import '../../../assets/Scss/Color/Colors.scss';
+@import '../../../assets/Scss/global/global.scss';
+
+.Home {
+  margin: auto 0px;
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .mid {
+      margin-left: 3em;
+
+      .name {
+        font-family: $Header;
+        font-size: 5em;
+        color: white;
+        line-height: 110px;
+      }
+
+      .workAs {
+        font-family: $Header;
+        color: $lightest-slate;
+        text-transform: capitalize;
+        font-size: 1.1em;
+        max-width: 560px;
+        line-height: 2em;
+        margin-top: 1.5em;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .Home {
+    margin: auto auto;
+    .mid {
+      margin-left: 1.5em !important;
+      text-align: center;
+    }
+    .name {
+      font-size: 2.5em !important;
+      line-height: 1em !important;
+    }
+    .workAs {
+      font-size: .9em !important;
+    }
+    .top,.bottom {
+      font-size: .9em;
+    }
+  }
+}
