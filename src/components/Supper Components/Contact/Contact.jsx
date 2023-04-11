@@ -48,7 +48,7 @@ function Contact() {
               href="https://www.frontendmentor.io/profile/Ali503-7"
               target="_blank"
             >
-              <img src="/imgs/logs/frontend-mentor-seeklogo.com.svg" alt="" />
+              <img src="./imgs/logs/frontend-mentor-seeklogo.com.svg" alt="" />
             </a>
           </div>
         </div>

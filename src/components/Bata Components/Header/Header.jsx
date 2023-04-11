@@ -38,7 +38,7 @@ function Header({ currentPage }) {
             }
           >
             <img
-              src="/imgs/logs/logo.png"
+              src="./imgs/logs/logo.png"
               alt="#"
             />
           </div>
