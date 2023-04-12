@@ -13,7 +13,7 @@
 
       .name {
         font-family: $Header;
-        font-size: 5em;
+        font-size: 7em;
         color: white;
         line-height: 110px;
       }
@@ -22,7 +22,7 @@
         font-family: $Header;
         color: $lightest-slate;
         text-transform: capitalize;
-        font-size: 1.1em;
+        font-size: 1.5em;
         max-width: 560px;
         line-height: 2em;
         margin-top: 1.5em;
@@ -33,17 +33,18 @@
 
 @media (max-width: 600px) {
   .Home {
-    margin: auto auto;
+    margin: auto 0px !important;
     .mid {
-      margin-left: 1.5em !important;
+      margin-left: 0px !important;
+      align-self: center;
       text-align: center;
     }
     .name {
-      font-size: 2.5em !important;
+      font-size: 13vw !important;
       line-height: 1em !important;
     }
     .workAs {
-      font-size: .9em !important;
+      font-size: 4vw !important;
     }
     .top,.bottom {
       font-size: .9em;
