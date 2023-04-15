@@ -21,58 +21,43 @@ function Skills() {
       </div>
       <div className="boxes">
         <div className="box">
-          <img
-            src="./imgs/Skills_imgs/html-svgrepo-com.svg"
-            alt="img not found"
-          />
+          <img src="./imgs/Skills_imgs/html-svgrepo-com.svg" alt="html" />
           <span>HTML</span>
         </div>
         <div className="box">
-          <img
-            src="./imgs/Skills_imgs/css-svgrepo-com.svg"
-            alt="img not found"
-          />
+          <img src="./imgs/Skills_imgs/css-svgrepo-com.svg" alt="css" />
           <span>CSS</span>
         </div>
         <div className="box">
-          <img
-            src="./imgs/Skills_imgs/js-svgrepo-com.svg"
-            alt="img not found"
-          />
+          <img src="./imgs/Skills_imgs/js-svgrepo-com.svg" alt="javascript" />
           <span>JAVASCRIPT</span>
         </div>
         <div className="box">
-          <img
-            src="./imgs/Skills_imgs/reactjs-svgrepo-com.svg"
-            alt="img not found"
-          />
+          <img src="./imgs/Skills_imgs/reactjs-svgrepo-com.svg" alt="React" />
           <span>REACT</span>
         </div>
         <div className="box">
-          <img
-            src="./imgs/Skills_imgs/sass-svgrepo-com.svg"
-            alt="img not found"
-          />
+          <img src="./imgs/Skills_imgs/sass-svgrepo-com.svg" alt="Scss" />
           <span>SASS & SCSS</span>
         </div>
         <div className="box">
           <img
             src="./imgs/Skills_imgs/tailwindcss-icon-svgrepo-com.svg"
-            alt="img not found"
+            alt="TAILWIND"
           />
           <span>TAILWIND</span>
         </div>
         <div className="box">
           <img
             src="./imgs/Skills_imgs/github-svgrepo-com.svg"
-            alt="img not found"
+            alt="github"
           />
           <span>GITHUB</span>
         </div>
         <div className="box">
           <img
             src="./imgs/Skills_imgs/git-svgrepo-com.svg"
-            alt="img not found"
+            alt="git"
           />
           <span>GIT</span>
         </div>

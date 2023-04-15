@@ -16,7 +16,7 @@ function Experience() {
       return (
         <div className="Project" key={img.name}>
           <div className="img">
-            <img src={img.url} alt="not found" />
+            <img src={img.url} alt={img.name} />
             <div className="code">
               <a href={img.code} target="_blank">
                 Code
