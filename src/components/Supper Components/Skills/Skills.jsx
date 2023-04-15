@@ -6,7 +6,7 @@ function Skills() {
   const Skills = useRef();
 
   useEffect(() => {
-    Hacker(Skills, 3);
+    Hacker(Skills, 6);
   }, []);
 
   return (

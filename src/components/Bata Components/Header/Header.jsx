@@ -12,13 +12,13 @@ function Header({ currentPage }) {
   const About = useRef(null);
   const Experience = useRef(null);
   const Contact = useRef(null);
-  const resume = useRef(null);
+  // const resume = useRef(null);
 
   useEffect(() => {
     Hacker(About, 6);
     Hacker(Experience, 6);
     Hacker(Contact, 6);
-    Hacker(resume, 6);
+    // Hacker(resume, 6);
   }, []);
 
   function Toggle() {
@@ -146,11 +146,11 @@ function Header({ currentPage }) {
                   </li>
                 </ol>
               </div>
-              <div className="button">
+              {/* <div className="button">
                 <button ref={resume} data-value="Resume">
                   Resume
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

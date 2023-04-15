@@ -92,7 +92,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       dispatch({ type: toWare });
-    }, 700);
+    }, 600);
   }, [toWare]);
 
   useEffect(() => {
