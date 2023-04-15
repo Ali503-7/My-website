@@ -5,7 +5,7 @@ function email() {
   return (
     <div className="Email container">
       <span className="email">
-        <a href="mailto:alimoali576@gmail.com">alimoali354@gmail.com</a>
+        <a href="mailto:alimoali576@gmail.com">alimoali576@gmail.com</a>
       </span>
       <span className="line"></span>
     </div>
